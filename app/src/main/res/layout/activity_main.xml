@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tn.challenge.insertActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register cities and populations :"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/CityName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="City :"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/CityNameText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/CityPopulation"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Population :"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/CityPopulationText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Submit"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The 3 cities with the largest population :"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/getCities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get the 3 cities" />
+        <ListView
+            android:id="@+id/CitiesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
